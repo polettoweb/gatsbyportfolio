@@ -11,15 +11,17 @@
     }
 
     &__img {
-        opacity: 0.7;
+        opacity: 1;
         margin-bottom: 40px;
         margin: 20px 30px;
-        box-shadow: 25px 25px 0px rgba(255, 255, 255, 0.3);
-        transition: all 0.5s linear;
+        box-shadow: 25px 25px 0px #370101;
+        transition: all 0.4s ease-in-out;
         border-radius: 5px;
+        background-color: #7b2525;
 
         &:hover {
             box-shadow: none;
+            transform: scale(1.05);
             opacity: 1;
         }
         img {
