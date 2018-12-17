@@ -1,0 +1,55 @@
+.portfolio {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__img {
+        opacity: 0.7;
+        margin-bottom: 40px;
+        margin: 20px 30px;
+        box-shadow: 25px 25px 0px rgba(255, 255, 255, 0.3);
+        transition: all 0.5s linear;
+        border-radius: 5px;
+
+        &:hover {
+            box-shadow: none;
+            opacity: 1;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    }
+
+    &-detail {
+        &__content {
+            padding-top: 50px;
+        }
+
+        &__description {
+            color: white;
+        }
+
+        &__image {
+            width: 100%;
+            // background-color: rgba(255, 255, 255, 0.1);
+            padding: 40px 0;
+
+            img {
+                display: block;
+                width: auto;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+    }
+}

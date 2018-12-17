@@ -1,0 +1,112 @@
+.home {
+    &__container {
+        height: calc(100vh - 160px);
+        min-height: 610px;
+        width: 100vw;
+        max-width: 1280px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        @media (max-width: 959px) {
+            height: auto;
+        }
+    }
+
+    &__intro {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 1000px;
+
+        @media (max-width: 1199px) {
+            justify-content: flex-end
+        }
+
+        @media (max-width: 960px) {
+            flex-direction: column-reverse;
+        }
+
+        .tilt {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            transform: rotateY(40deg);
+            background: rgba(255, 255, 255, 0.1);
+
+            @media (max-width: 959px) {
+                width: 100%;
+                position: relative;
+                transform: none;
+                top:0;
+                left: 0;
+            }
+
+            @media (max-width:579px) {
+                height: auto;
+            }
+
+            img {
+                display: block;
+                height: 100%;
+                margin-left: 20px;
+
+                @media (max-width:579px) {
+                    width: 100%;
+                    height: auto;
+                    margin-left: 0;
+                }
+            }
+        }
+        h1 {
+            width: 90%;
+            max-width: 550px;
+            font-size: 3em;
+            color: #ffffff;
+            text-align: left;
+            margin-left:60px;
+
+            @media (max-width: 1199px) {
+                margin-left: 0;
+            }
+
+            @media (max-width: 959px) {
+                font-size: 2.5em;
+                margin-right: 20px;
+            }
+
+            @media (max-width: 479px) {
+                font-size: 2em;
+            }
+        }
+    }
+
+    &__text {
+        position: absolute;
+        width: 100%;
+        padding: 0 10px;
+        max-width: 500px;
+        left: 50%;
+        top: 30%;
+        color: white;
+        line-height: 30px;
+
+        @media (max-width: 959px) {
+            position: relative;
+            max-width: 94%;
+            margin-left: 3%;
+            left: auto;
+            margin: 0 auto;
+            margin-bottom: 36px;
+        }
+
+        @media (min-height: 900px) {
+            line-height:35px;
+            font-size: 16px;
+        }
+    }
+}

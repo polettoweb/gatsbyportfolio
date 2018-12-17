@@ -1,0 +1,45 @@
+.socials {
+    &__container {
+        display:flex;
+
+        a {
+            width: 45px;
+            height: 100%;
+            line-height: 80px;
+            display: inline-block;
+            text-align: center;
+
+            i {
+                line-height: 80px;
+                font-size: 24px;
+                transition: all 0.2s linear;
+                color: #ffffff;
+                @media (max-width: 579px) {
+                    font-size: 32px;
+                }
+
+                &.ion-social-github {
+                    &:hover {
+                        color: #cccccc;
+                    }
+                }
+                &.ion-social-twitter {
+                    &:hover{
+                        color: #50ABF1;
+                    }
+                }
+                &.ion-social-googleplus {
+                    &:hover{
+                        color: #DD4B39;
+                    }
+                }
+                &.ion-social-linkedin {
+                    &:hover{
+                        color: #0084B1;
+                    }
+
+                }
+            }
+        }
+    }
+}

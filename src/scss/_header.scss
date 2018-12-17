@@ -1,0 +1,29 @@
+.header {
+
+    &__container {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        background-image: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+
+        .logo {
+            width: 36px;
+            height: 36px;
+            align-self: center;
+            margin-right: 20px;
+            position: absolute;
+            top: 36px;
+            left: 36px;
+            
+            @media (max-width: 480px) {
+                top: 8px;
+                left: 8px;
+            }
+
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+}
