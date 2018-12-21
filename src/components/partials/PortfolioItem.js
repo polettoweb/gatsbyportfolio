@@ -21,6 +21,8 @@ class PortfolioItem extends Component {
                                 this.props.websites.map(item => <li><a href={item.link} title={item.title}>{item.link}</a></li>)
                             }
                         </ul>
+                        <span>Role</span>
+                        <p className="portfolio-detail__role">{this.props.role}</p>
                         <span>Techs used</span>
                         <div className="portfolio-detail__techs-list">
                             {

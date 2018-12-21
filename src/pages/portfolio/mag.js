@@ -19,7 +19,7 @@ const item = {
             title: 'East Midlands Official Airport'
         },
         {
-            link: 'http://www.escapelounges.com/',
+            link: 'https://www.escapelounges.com/',
             title: 'Airports Escape lounges Website'
         }
     ],
@@ -38,8 +38,7 @@ const item = {
         'GraphQL',
         'Webpack'
     ],
-    link: 'http://www.brandymelville.co.uk',
-    linkTitle: 'Brandy Melville UK',
+    role: 'UI Engineer'
 }
 
 const Mag = () => (
