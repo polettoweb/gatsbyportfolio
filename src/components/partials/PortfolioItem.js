@@ -1,25 +1,39 @@
 import React, { Component } from 'react';
-class PortfolioItem extends Component {
-    constructor(props) {
-        super(props);
-        // this.image = this.props.image;
-        // this.text = this.props.text;
-        // this.link = this.props.link;
-        this.linkTitle = this.props.linkTitle;
-        // this.linkGit = this.props.linkGit;
-        this.tags = this.props.tags;
-        // this.linkGitTitle = this.props.linkGitTitle;
-    }
+import {Helmet} from 'react-helmet';
 
+class PortfolioItem extends Component {
     render() {
-        // let tags = this.tags.split(",");
         return (
-            <div className="portfolio__brand" >
-                {this.props.brand}
-                <a href={this.link} title={this.linkTitle} target="_blank" rel="noopener noreferrer">
-                    <img src={this.image} alt={this.linkTitle} />
-                </a>
+            <React.Fragment>
+                <Helmet>
+                <body className="alternate" />
+            </Helmet>
+            <div className="portfolio-detail__content">
+                <h1>Manchester Airport Group</h1>
+                <div className="portfolio-detail__image">
+                    <img src={this.props.src} alt={this.props.alt} />
+                </div>
+                <div className="portfolio-detail__description">
+                    <div className="portfolio-detail__websites">
+                        <span>Websites</span>
+                        <ul>
+                            {
+                                this.props.websites.map(item => <li><a href={item.link} title={item.title}>{item.link}</a></li>)
+                            }
+                        </ul>
+                        <span>Techs used</span>
+                        <div className="portfolio-detail__techs-list">
+                            {
+                                this.props.tags.map(item => <p>{item}</p>)
+                            }
+                        </div>
+                    </div>
+                    <div className="portfolio-detail__text">
+                        <p>{this.props.alt}</p>
+                    </div>
+                </div>
             </div>
+            </React.Fragment>
         )
     }
 }

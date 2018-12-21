@@ -1,22 +1,42 @@
 import React from 'react'
 import Layout from '../../components/layout'
-import { Helmet } from 'react-helmet'
-import mag from '../../images/mag-devices.png'
+import PortfolioItem from '../../components/partials/PortfolioItem'
+import mag from '../../images/mag-devices.png';
 
-const PortfolioItem = {
+const item = {
     path: 'mag',
-    alt:
-        'Magento Enterprise eCommerce Website built for the UK branch of BrandyMelville. An High street fashion brand',
+    websites: [
+        {
+            link:'https://www.manchesterairport.co.uk',
+            title: 'Manchester Airport Official Website'
+        },
+        {
+            link:'https://www.stanstedairport.com/',
+            title: 'Stansted Airport Official Website'
+        },
+        {
+            link: 'https://www.eastmidlandsairport.com/',
+            title: 'East Midlands Official Airport'
+        },
+        {
+            link: 'http://www.escapelounges.com/',
+            title: 'Airports Escape lounges Website'
+        }
+    ],
+    alt:'Various websites built and maintained for the MAG Airports group using VueJS as a frontend framework and deep diving into its ecosystem. VueX for state management, NuxtJS for server-side rendering, Sass for styling, Webpack as development environment',
     src: mag,
     tags: [
-        'Graphic Design',
-        'Full Stack Development',
-        'Magento',
+        'VueJS',
+        'VueX',
+        'Server-Side Rendering',
+        'Razor',
         'Sass',
-        ' Javascript',
+        'Javascript',
         'JSON',
         'AJAX',
         'RESTful API',
+        'GraphQL',
+        'Webpack'
     ],
     link: 'http://www.brandymelville.co.uk',
     linkTitle: 'Brandy Melville UK',
@@ -24,18 +44,7 @@ const PortfolioItem = {
 
 const Mag = () => (
     <Layout>
-        <Helmet>
-            <body className="alternate" />
-        </Helmet>
-        <div className="portfolio-detail__content">
-            <h1>Manchester Airport Group</h1>
-            <div className="portfolio-detail__image">
-                <img src={mag} alt={PortfolioItem.alt} />
-            </div>
-            <div className="portfolio-detail__description">
-                <p>{PortfolioItem.alt}</p>
-            </div>
-        </div>
+        <PortfolioItem {...item}/>
     </Layout>
 )
 

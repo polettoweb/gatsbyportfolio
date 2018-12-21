@@ -9,7 +9,7 @@ import tankard from '../images/lanterntankard-logo.png'
 import bmusa from '../images/bm-logo.png'
 import stoves from '../images/stoves-logo.png'
 import bbvenezia from '../images/bbvenezia-logo.png'
-import mag from '../images/mag-logo.png'
+import mag from '../images/mag-logo-white.png'
 
 const PortfolioItems = [
     {
