@@ -1,17 +1,17 @@
 import React from 'react'
 import Layout from '../../components/layout'
 import PortfolioItem from '../../components/partials/PortfolioItem'
-import mg from '../../images/missguided-devices.jpg';
+import mg from '../../images/missguided-devices.png'
 
 const item = {
     path: 'missguided',
     websites: [
         {
-            link:'https://www.missguided.co.uk',
-            title: 'Missguided Website'
+            link: 'https://www.missguided.co.uk',
+            title: 'Missguided Website',
         },
     ],
-    alt:'Dummy text',
+    alt: 'Dummy text',
     src: mg,
     tags: [
         'React',
@@ -21,14 +21,14 @@ const item = {
         'JSON',
         'AJAX',
         'RESTful API',
-        'Webpack'
+        'Webpack',
     ],
-    role: 'Frontend Software Engineer'
+    role: 'Frontend Software Engineer',
 }
 
 const Missguided = () => (
     <Layout>
-        <PortfolioItem {...item}/>
+        <PortfolioItem {...item} />
     </Layout>
 )
 
