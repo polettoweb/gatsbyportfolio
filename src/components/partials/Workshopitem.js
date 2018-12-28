@@ -1,37 +1,59 @@
-import React, { Component } from 'react';
-class PortfolioItem extends Component {
+import React, { Component } from 'react'
+import github from '../../images/GitHub.png'
+
+class WorkshopItem extends Component {
     constructor(props) {
-        super(props);
-        this.image = this.props.image;
-        this.text = this.props.text;
-        this.link = this.props.link;
-        this.linkTitle = this.props.linkTitle;
-        this.linkGit = this.props.linkGit;
-        this.tags = this.props.tags;
-        this.linkGitTitle = this.props.linkGitTitle;
+        super(props)
+        this.image = this.props.image
+        this.text = this.props.text
+        this.link = this.props.link
+        this.linkTitle = this.props.linkTitle
+        this.linkGit = this.props.linkGit
+        this.tags = this.props.tags
+        this.linkGitTitle = this.props.linkGitTitle
     }
     render() {
-        let tags = this.tags.split(",");
+        let tags = this.tags.split(',')
         return (
-            <div className="portfolio__box">
-                <div className="portfolio__img">
-                    <a href={this.link} title={this.linkTitle} target="_blank" rel="noopener noreferrer">
+            <div className="workshop__box">
+                <div className="workshop__img">
+                    <a
+                        href={this.link}
+                        title={this.linkTitle}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <img src={this.image} alt={this.linkTitle} />
                     </a>
-                </div>
-                <div className="portfolio__links">
-                    <p className="portfolio__links-text">{this.text}</p>
-                    {this.linkGit ? <a href={this.linkGit} title={this.linkGitTitle} target="_blank" className="portfolio__links-git" rel="noopener noreferrer"><img src="img/GitHub.png" alt="GitHub Logo" /></a> : ''}
-                </div>
-                <div className="portfolio__tags">
-                    {tags.map(tag => {
-                        return <i target="_self" key={tag}>{tag}</i>
-                    })
-                    }
+                    <div className="workshop__links">
+                        <p className="workshop__links-text">{this.text}</p>
+                        {this.linkGit ? (
+                            <a
+                                href={this.linkGit}
+                                title={this.linkGitTitle}
+                                target="_blank"
+                                className="workshop__links-git"
+                                rel="noopener noreferrer"
+                            >
+                                <img src={github} alt="GitHub Logo" />
+                            </a>
+                        ) : (
+                            ''
+                        )}
+                    </div>
+                    <div className="workshop__tags">
+                        {tags.map(tag => {
+                            return (
+                                <i target="_self" key={tag}>
+                                    {tag}
+                                </i>
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         )
     }
 }
 
-export default PortfolioItem;
+export default WorkshopItem
