@@ -5,6 +5,7 @@ import brandymelville from '../../images/bmusa-devices.png'
 
 const item = {
     path: 'brandymelville',
+    title: 'Brandy Melville',
     websites: [
         {
             link: 'https://www.brandymelvilleusa.com',
@@ -15,9 +16,9 @@ const item = {
             title: 'Brandy Melville UK Offical Website ',
         },
     ],
-    alt: 'dummy',
+    alt: 'ECommerce website built with Magento. I\'ve created he minimalist theme from scratch using Magento MVC system (PHP), Sass and Javascript. Using fetures like lookbook for shopping directly from the instagram feed. Developmnet environment created and developed from scratch started from an empty linux virtual machine (CentOS)',
     src: brandymelville,
-    tags: ['Javascript', 'Magento', 'Sass', 'JSON', 'RESTful API'],
+    tags: ['Javascript', 'PHP', 'Magento', 'Sass', 'JSON', 'RESTful API'],
     role: 'Web Developer',
 }
 

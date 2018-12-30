@@ -5,13 +5,14 @@ import tankard from '../../images/lanterntankard-devices.png'
 
 const item = {
     path: 'lanterntankard',
+    title: 'The Lantern Tankard',
     websites: [
         {
             link: 'https://www.thelanterntankard.co.uk',
             title: 'The Lantern Tankard Website',
         },
     ],
-    alt: 'dummy',
+    alt: 'Single page website built in HTML, Sass, CSS animations and Vanilla JS . Fully responsive and SEO oriented.',
     src: tankard,
     tags: ['Sass', 'Javascript', 'CSS animations'],
     role: 'Frontend Web Developer',

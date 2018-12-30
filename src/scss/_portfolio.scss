@@ -2,6 +2,7 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+    position: relative;
 
     &__container {
         width: 100%;
@@ -51,6 +52,10 @@
                 width: auto;
                 height: auto;
                 margin: 0 auto;
+
+                @media (max-width: 960px) {
+                    width: 100%;
+                }
             }
         }
 
@@ -59,6 +64,10 @@
             background-color: rgba(255, 255, 255, 0.1);
             width: 100%;
             padding: 24px 24px 0;
+
+            @media (max-width: 767px) {
+                flex-direction: column-reverse;
+            }
 
             span {
                 display: block;
@@ -87,6 +96,10 @@
         &__websites {
             width: 40%;
             padding: 16px;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
         }
 
         &__techs-list {
@@ -110,9 +123,45 @@
             width: 60%;
             padding: 16px 16px 16px 48px;
 
+            @media (max-width: 767px) {
+                width: 100%;
+                padding: 16px;
+            }
+
             p {
                 line-height: 25px;
             }
+        }
+    }
+
+    &__back {
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+        background-color: white;
+        color: $main;
+        text-align: center;
+        line-height: 40px;
+        font-weight: bold;
+        text-decoration: none;
+        position: absolute;
+        top: 20%;
+        right: 15px;
+        box-shadow: 10px 10px 0 $main-dark;
+        transition: all 0.5s ease-in-out;
+
+        &:before {
+            content:'\003c';
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            font-size: 24px;
+            transform: translate3d(0,-50%,0);
+        }
+
+        &:hover {
+            box-shadow: none;
+            transform: scale(1.05);
         }
     }
 }

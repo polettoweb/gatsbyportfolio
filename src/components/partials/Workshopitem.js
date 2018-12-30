@@ -23,33 +23,33 @@ class WorkshopItem extends Component {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <img src={this.image} alt={this.linkTitle} />
+                        <img
+                            className="workshop__techImg"
+                            src={this.image}
+                            alt={this.linkTitle}
+                        />
                     </a>
-                    <div className="workshop__links">
-                        <p className="workshop__links-text">{this.text}</p>
-                        {this.linkGit ? (
-                            <a
-                                href={this.linkGit}
-                                title={this.linkGitTitle}
-                                target="_blank"
-                                className="workshop__links-git"
-                                rel="noopener noreferrer"
-                            >
-                                <img src={github} alt="GitHub Logo" />
-                            </a>
-                        ) : (
-                            ''
-                        )}
-                    </div>
+                </div>
+                <div className="workshop__links">
+                    <p className="workshop__links-text">{this.text}</p>
                     <div className="workshop__tags">
                         {tags.map(tag => {
-                            return (
-                                <i target="_self" key={tag}>
-                                    {tag}
-                                </i>
-                            )
+                            return <i key={tag}>{tag}</i>
                         })}
                     </div>
+                    {this.linkGit ? (
+                        <a
+                            href={this.linkGit}
+                            title={this.linkGitTitle}
+                            target="_blank"
+                            className="workshop__links-git"
+                            rel="noopener noreferrer"
+                        >
+                            <img src={github} alt="GitHub Logo" />
+                        </a>
+                    ) : (
+                        ''
+                    )}
                 </div>
             </div>
         )

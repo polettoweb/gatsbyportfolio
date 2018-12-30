@@ -6,6 +6,8 @@ $grey: #2b2b2b;
 $lgrey: #f4f5f7;
 $ltext: #efefef;
 $text: #424242;
+$main: #580f0f;
+$main-dark: #370101;
 $max-width: 1200px;
 $text-color: #424753;
 $text-color-light: #dedede;
@@ -13,19 +15,20 @@ $title-color: #6f788c;
 $font-size: 0.9rem;
 $family-primary: 'Montserrat', sans-serif;
 $family-secondary: $family-primary;
-$box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+$box-shadow: 25px 25px 0px $main-dark;
+$box-shadow-left: -25px 25px 0px $main-dark;
 $linear-gradient: linear-gradient(-40deg, $azure, $purple);
-$base-transition: all cubic-bezier(.17, .67, .5, 1) 0.3s;
-$timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+$base-transition: all cubic-bezier(0.17, 0.67, 0.5, 1) 0.3s;
+$timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 
 /*HOME*/
 
 $size: 20px;
 $speed: 2s;
-$peakopacity:0.7;
+$peakopacity: 0.7;
 
 /* MEDIA QUERY */
-$mobile: "(max-width: 768px)";
+$mobile: '(max-width: 768px)';
 $mbp: 768px;
 $dbp: 769px;
 
@@ -70,11 +73,10 @@ $dbp: 769px;
 
 //Name homepage
 @keyframes dash {
-
     to {
         stroke-dasharray: 0;
         stroke-dashoffset: 0;
-        fill: rgba(255,255,255,0.4);
+        fill: rgba(255, 255, 255, 0.4);
     }
 }
 
@@ -108,7 +110,7 @@ $dbp: 769px;
     0% {
         border-left: 3px solid rgba(255, 255, 255, 0);
         border-bottom: 3px solid rgba(255, 255, 255, 0);
-        transform: translate($size/-6, $size*4/-6)rotate(-45deg);
+        transform: translate($size/-6, $size * 4/-6) rotate(-45deg);
     }
     10%,
     90% {
@@ -118,12 +120,12 @@ $dbp: 769px;
     50% {
         border-left: 3px solid rgba(255, 255, 255, $peakopacity);
         border-bottom: 3px solid rgba(255, 255, 255, $peakopacity);
-        transform: translate($size/-6, 0px)rotate(-45deg)scale(1.4);
+        transform: translate($size/-6, 0px) rotate(-45deg) scale(1.4);
     }
     100% {
         border-left: 3px solid rgba(255, 255, 255, 0);
         border-bottom: 3px solid rgba(255, 255, 255, 0);
-        transform: translate($size/-6, $size*4/6)rotate(-45deg);
+        transform: translate($size/-6, $size * 4/6) rotate(-45deg);
     }
 }
 @keyframes slide-in {

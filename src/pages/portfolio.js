@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
+import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import missguided from '../images/missguided-logo.png'
 import mennace from '../images/mennace-logo.png'
@@ -101,6 +102,10 @@ class Portfolio extends Component {
         return (
             <Layout>
                 <div className="portfolio">
+                    <Helmet>
+                        <meta name="description" content="Marco Poletto Frontend Web Developer, Web Designer freelance, portfolio"/>
+                        <title>Marco Poletto | Web Developer - Portfolio </title>
+                    </Helmet>
                     <h1>Portfolio</h1>
                     <div className="portfolio__container">
                         {PortfolioItems.map((item, index) => {

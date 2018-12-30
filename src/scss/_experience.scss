@@ -1,144 +1,162 @@
 .experience {
-  @include centerItem($max-width);
-  padding-bottom: 100px;
-  //height: 600px;
-  position: relative;
-  &:before {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 90%;
-    background-color: $azure;
-    left: 50%;
-    @media (max-width: 767px) {
-      left: 96%;
-    }
-  }
-  &__container {
     @include centerItem($max-width);
-    @include flexBasic(center, column, nowrap);
-    padding: 100px 20px 0;
-    box-sizing: border-box;
-    h3 {
-      padding: 0;
-    }
-    ul {
-      width: 100%;
-      .expcard {
-        clear: both;
-        width: calc(50% - 30px);
-        height: auto;
-        position: relative;
-        box-shadow: $box-shadow;
-      
+    padding-bottom: 100px;
+    //height: 600px;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 90%;
+        background-color: white;
+        left: 50%;
         @media (max-width: 767px) {
-          width: 88%;
-          margin-bottom: 70px;
+            left: 96%;
         }
-
-        &:nth-child(odd) {
-          float: left;
-          @media (max-width: 767px) {
-          }
-        }
-
-        &:nth-child(even) {
-          float: right;
-          @media (max-width: 767px) {
-            float: left;
-          }
-        }
-        &:not(:nth-child(1)) {
-          margin-top: -60px;
-        }
-
-        &.even {
-          &:before {
-            position: absolute;
-            content: "";
-            width: 0;
-            height: 0;
-            border-top: 16px solid #424242;
-            border-left: 16px solid transparent;
-            left: -16px;
-            top: 0;
-            @media (max-width: 767px) {
-              left: auto;
-              right: -16px;
-              border-right: 16px solid transparent;
-            }
-          }
-
-          .ion-ios-circle-filled {
-            left: -41px;
-            @media (max-width: 767px) {
-              left: auto;
-              right: -9.5vw;
-            }
-          }
-        }
-
-        &.odd {
-          &:before {
-            position: absolute;
-            content: "";
-            width: 0;
-            height: 0;
-            border-top: 16px solid #424242;
-            border-right: 16px solid transparent;
-            right: -16px;
-            top: 0;
-          }
-
-          .ion-ios-circle-filled {
-            right: -44px;
-            @media (max-width: 767px) {
-              right: -9.5vw;
-            }
-          }
-        }
-
-        &__title {
-          width: calc(100% - 40px);
-          height: 30px;
-          padding: 20px;
-          background-color: $text;
-          color: $ltext;
-
-          p {
-            color: $ltext;
-            font-weight: 700;
-            line-height: 30px;
-            font-size: 19px;
-          }
-        }
-
-        &__text {
-          width: calc(100% - 40px);
-          height: auto;
-          padding: 20px;
-
-          p {
-            padding: 0 20px;
-
-            &.expcard__location {
-              padding-bottom: 10px;
-            }
-
-            &.expcard__date {
-              padding-bottom: 10px;
-            }
-          }
-        }
-
-        .ion-ios-circle-filled {
-          font-size: 30px;
-          color: $azure;
-          position: absolute;
-          top: -15px;
-          right: 0;
-        }
-      }
     }
-  }
+    &__container {
+        @include centerItem($max-width);
+        @include flexBasic(center, column, nowrap);
+        padding: 100px 20px 0;
+        box-sizing: border-box;
+
+        h3 {
+            padding: 0;
+        }
+        ul {
+            width: 100%;
+
+            .expcard {
+                clear: both;
+                width: calc(50% - 30px);
+                height: auto;
+                position: relative;
+                transition: all 0.4s ease-in-out;
+
+                @media (max-width: 767px) {
+                    width: 88%;
+                    margin-bottom: 100px;
+                }
+
+                &:nth-child(odd) {
+                    float: left;
+                    box-shadow: $box-shadow-left;
+
+                    @media (max-width: 767px) {
+                        box-shadow: 15px 15px 0 $main-dark;
+                    }
+
+                    &:hover {
+                        box-shadow: none;
+                    }
+                }
+
+                &:nth-child(even) {
+                    float: right;
+                    box-shadow: $box-shadow;
+
+                    @media (max-width: 767px) {
+                        float: left;
+                        box-shadow: 15px 15px 0 $main-dark;
+                    }
+
+                    &:hover {
+                        box-shadow: none;
+                    }
+                }
+
+                &:not(:nth-child(1)) {
+                    margin-top: -60px;
+                }
+
+                &.even {
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        border-top: 16px solid rgba(white, 0.5);
+                        border-left: 16px solid transparent;
+                        left: -16px;
+                        top: 0;
+                        @media (max-width: 767px) {
+                            left: auto;
+                            right: -16px;
+                            border-left: none;
+                            border-right: 16px solid transparent;
+                        }
+                    }
+
+                    .ion-ios-circle-filled {
+                        left: -41px;
+                        @media (max-width: 767px) {
+                            left: auto;
+                            right: -9.5vw;
+                        }
+                    }
+                }
+
+                &.odd {
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        border-top: 16px solid rgba(white, 0.5);
+                        border-right: 16px solid transparent;
+                        right: -16px;
+                        top: 0;
+                    }
+
+                    .ion-ios-circle-filled {
+                        right: -44px;
+                        @media (max-width: 767px) {
+                            right: -9.5vw;
+                        }
+                    }
+                }
+
+                &__title {
+                    padding: 20px;
+                    background-color: rgba(white, 0.5);
+
+                    p {
+                        color: #370101;
+                        font-weight: 700;
+                        line-height: 30px;
+                        font-size: 19px;
+                    }
+                }
+
+                &__text {
+                    background-color: rgba(white, 0.3);
+                    width: 100%;
+                    height: auto;
+                    padding: 20px;
+
+                    p {
+                        padding: 0 20px;
+
+                        &.expcard__location {
+                            padding-bottom: 10px;
+                            color: white;
+                        }
+
+                        &.expcard__date {
+                            padding-bottom: 10px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .ion-ios-circle-filled {
+                    font-size: 30px;
+                    color: white;
+                    position: absolute;
+                    top: -15px;
+                    right: 0;
+                }
+            }
+        }
+    }
 }

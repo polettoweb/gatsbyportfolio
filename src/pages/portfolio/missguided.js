@@ -5,13 +5,14 @@ import mg from '../../images/missguided-devices.png'
 
 const item = {
     path: 'missguided',
+    title: 'Missguided',
     websites: [
         {
             link: 'https://www.missguided.co.uk',
             title: 'Missguided Website',
         },
     ],
-    alt: 'Dummy text',
+    alt: 'I was part of a big team maintening the two company\'s websites (Missguided and Mennace) built with Magento, reshaping them with a more up-to-date look and feel, improving their performance, introducing Webpack bundler and React components.',
     src: mg,
     tags: [
         'React',

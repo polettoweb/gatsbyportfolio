@@ -5,6 +5,7 @@ import mag from '../../images/mag-devices.png';
 
 const item = {
     path: 'mag',
+    title: 'Manchester Airport Group',
     websites: [
         {
             link:'https://www.manchesterairport.co.uk',
@@ -23,7 +24,7 @@ const item = {
             title: 'Airports Escape lounges Website'
         }
     ],
-    alt:'Various websites built and maintained for the MAG Airports group using VueJS as a frontend framework and deep diving into its ecosystem. VueX for state management, NuxtJS for server-side rendering, Sass for styling, Webpack as development environment',
+    alt:'Various websites built and maintained for the MAG Airports group using VueJS as a frontend framework and deep diving into its ecosystem. VueX for state management, NuxtJS for server-side rendering, Sass for styling, Webpack as development bundler.',
     src: mag,
     tags: [
         'VueJS',

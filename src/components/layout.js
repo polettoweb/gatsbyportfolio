@@ -21,16 +21,14 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
+          title="Marco Poletto | Web Developer | Mentor"
+          author="Marco Poletto Web Developer"
+          charSet="UTF-8"
         >
           <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle="Marco Poletto | Web Developer | Mentor" />
         <div
           style={{
             margin: '0 auto',

@@ -37,7 +37,7 @@ class Blog extends Component {
                             <article className="blog-cat__post" key={post.id}>
                                 {console.log(post)}
 
-                                <Link to={`/blog/${post.slug}/${post.id}`} slug={post.slug}>
+                                <Link to={`/blog/${post.slug}`} slug={post.slug}>
                                     <div className="blog-cat__image">
                                         <img src={post.thumbnail} alt={this.state.title} className="blog-cat__image" />
                                     </div>
