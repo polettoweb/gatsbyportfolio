@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout'
 
 const Blog = ({data}) =>(
@@ -11,9 +11,9 @@ const Blog = ({data}) =>(
 
                     <article className="blog-cat__post" key={post.node.id}>
                         <Link to={post.node.frontmatter.path}>
-                            {/* <div className="blog-cat__image"> */}
-                                {/* <img src={post.thumbnail} alt={this.state.title} className="blog-cat__image" /> */}
-                            {/* </div> */}
+                            <div className="blog-cat__image">
+                                <img src={post.node.frontmatter.featured.childImageSharp.fluid.src} alt={post.node.frontmatter.title} className="blog-cat__image" />
+                            </div>
                             <div className="blog-cat__title">
                                 <h2>{post.node.frontmatter.title}</h2>
                             </div>
@@ -38,6 +38,13 @@ export const pagequery = graphql`
                         title
                         date
                         author
+                        featured {
+                            childImageSharp {
+                                fluid {
+                                  src
+                                }
+                            }
+                        }
                     }
                     excerpt
                 }
