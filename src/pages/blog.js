@@ -14,10 +14,9 @@ const Blog = ({data}) =>(
                             <div className="blog-cat__image">
                                 <img src={post.node.frontmatter.featured.childImageSharp.fluid.src} alt={post.node.frontmatter.title} className="blog-cat__image" />
                             </div>
+
                             <div className="blog-cat__title">
-                                <h2>{post.node.frontmatter.title}</h2>
-                            </div>
-                            <div className="blog-cat__text">
+                                <h3>{post.node.frontmatter.title}</h3>
                                 <p>{post.node.excerpt}</p>
                             </div>
                         </Link>

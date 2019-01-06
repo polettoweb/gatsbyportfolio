@@ -1,9 +1,9 @@
 ---
 path: "/post-one"
 date: "2018-01-02"
-title: "First post"
+title: "ReactJs features I would love in VueJs"
 author: "Marco Poletto"
-featured: "./aqua-pura.jpg"
+featured: "./vuevsreact.jpg"
 ---
 
-First blog post 
+testo di prova
