@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
-import WorkshopItem from '../components/partials/WorkshopItem'
+import WorkshopItem from '../components/partials/Workshopitem'
 import Layout from '../components/layout'
 import nuxtCover from '../images/nuxtCover.jpg'
 import reactImg from '../images/react.jpg'
