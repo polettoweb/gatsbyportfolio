@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Line } from 'rc-progress'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import ExpCard from '../components/partials/ExpCard'
@@ -181,14 +180,6 @@ class Resume extends Component {
                                                     <p>
                                                         {item.title}
                                                     </p>
-                                                    <Line
-                                                        percent={item.value}
-                                                        strokeWidth="2"
-                                                        strokeColor="#ccc"
-                                                        prefixCls="skill"
-                                                        trailWidth="2"
-                                                        trailColor="#580f0f"
-                                                    />
                                                 </React.Fragment>
                                             )
                                         })}
@@ -208,7 +199,7 @@ class Resume extends Component {
                         </a>
                         <a
                             className="button"
-                            href="mailto:marco@marcopoletto.eu"
+                            href="mailto:marco@marcopoletto.co.uk"
                         >
                             Contact Me
                         </a>
