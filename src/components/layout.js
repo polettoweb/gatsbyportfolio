@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import PageTransition from 'gatsby-plugin-page-transitions';
 import Header from './commons/Header'
 import Footer from './commons/Footer'
 import '../scss/App.scss'
@@ -20,27 +19,25 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <PageTransition>
-          <Helmet
-            title="Marco Poletto | Web Developer | Mentor"
-            author="Marco Poletto Web Developer"
-            charSet="UTF-8"
-          >
-            <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-            <html lang="en" />
-          </Helmet>
-          <Header siteTitle="Marco Poletto | Web Developer | Mentor" />
-          <div
-            style={{
-              margin: '0 auto',
-              maxWidth: 1280,
-              paddingTop: 0,
-            }}
-          >
-            {children}
-          </div>
-          <Footer />
-        </PageTransition>
+        <Helmet
+          title="Marco Poletto | Web Developer | Mentor"
+          author="Marco Poletto Web Developer"
+          charSet="UTF-8"
+        >
+          <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+          <html lang="en" />
+        </Helmet>
+        <Header siteTitle="Marco Poletto | Web Developer | Mentor" />
+        <div
+          style={{
+            margin: '0 auto',
+            maxWidth: 1280,
+            paddingTop: 0,
+          }}
+        >
+          {children}
+        </div>
+        <Footer />
       </>
     )}
   />
