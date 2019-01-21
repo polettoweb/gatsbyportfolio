@@ -7,7 +7,7 @@ import Skill from '../components/partials/Skill'
 const expDetails = [
     {
         text:
-            'I am part of a big project for migrating a massive website built into Razor MVC into a new era. As part of the team I am maintening the company\'s websites (Manchester Airport, London Stanted Airport and East Midlands Airport), migrating them into VueJS components and NuxtJS, improving performance and updating/refactoring the existent codebase. Furthermore, I am mentoring junior developers with a pair programme system.',
+            'I am part of a big project for migrating a massive website built into Razor MVC into a new era. As part of the team I am maintening the company\'s websites (Manchester Airport, London Stanted Airport and East Midlands Airport), migrating them using CI/CD into VueJS components and NuxtJS, improving performance and updating/refactoring the existent codebase. Furthermore, I am managing and mentoring junior developers with a pair programme system.',
         number: 'odd',
         title: 'UI Engineer',
         location: 'Manchester Airports Group - Manchester',

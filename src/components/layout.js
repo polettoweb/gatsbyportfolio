@@ -17,7 +17,7 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={() => (
       <>
         <Helmet
           title="Marco Poletto | Web Developer | Mentor"

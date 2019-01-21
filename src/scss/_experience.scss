@@ -17,7 +17,7 @@
     &__container {
         @include centerItem($max-width);
         @include flexBasic(center, column, nowrap);
-        padding: 100px 20px 0;
+        padding: 0 20px;
         box-sizing: border-box;
 
         h3 {
@@ -25,6 +25,7 @@
         }
         ul {
             width: 100%;
+            margin: 32px auto;
 
             .expcard {
                 clear: both;
