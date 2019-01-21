@@ -39,7 +39,7 @@ module.exports = {
         background_color: '#580f0f',
         theme_color: '#580f0f',
         display: 'minimal-ui',
-        icon: 'src/images/favicon.ico', // This path is relative to the root of the site.
+        icon: 'src/images/logo.svg', // This path is relative to the root of the site.
       }
     },
     'gatsby-plugin-catch-links',
