@@ -7,7 +7,6 @@ import mennace from '../images/mennace-logo.png'
 import aquapura from '../images/aquapura-logo.png'
 import belling from '../images/belling-logo.png'
 import tankard from '../images/lanterntankard-logo.png'
-import bmusa from '../images/bm-logo.png'
 import stoves from '../images/stoves-logo.png'
 import bbvenezia from '../images/bbvenezia-logo.png'
 import mag from '../images/mag-logo-white.png'
@@ -68,16 +67,6 @@ const PortfolioItems = [
         linkTitle: 'Belling UK',
     },
     {
-        path: 'brandymelville',
-        alt:
-            'Magento Enterprise eCommerce Website built for the USA branch of BrandyMelville. An High street fashion brand',
-        src: bmusa,
-        tags:
-            'Graphic Design, Full Stack Development, Magento, Sass, Javascript, JSON, AJAX, RESTful API',
-        link: 'http://www.brandymelvilleusa.com',
-        linkTitle: 'Brandy Melville USA',
-    },
-    {
         path: 'aquapura',
         alt: 'Responsive website based on Wordpress and developed from scratch',
         src: aquapura,
@@ -103,8 +92,13 @@ class Portfolio extends Component {
             <Layout>
                 <div className="portfolio">
                     <Helmet>
-                        <meta name="description" content="Marco Poletto Frontend Web Developer, Web Designer freelance, portfolio"/>
-                        <title>Marco Poletto | Web Developer - Portfolio </title>
+                        <meta
+                            name="description"
+                            content="Marco Poletto Frontend Web Developer, Web Designer freelance, portfolio"
+                        />
+                        <title>
+                            Marco Poletto | Web Developer - Portfolio{' '}
+                        </title>
                     </Helmet>
                     <h1>Portfolio</h1>
                     <div className="portfolio__container">
