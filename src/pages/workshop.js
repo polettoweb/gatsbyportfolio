@@ -22,7 +22,7 @@ const workshopItems = [
         text: 'Previous version of the portfolio using React.JS as framework.',
         image: reactImg,
         tags: 'React.JS, React-router, Sass',
-        link: 'https://react.marcopoletto.co.uk',
+        link: 'https://react.marcopoletto.eu',
         linkTitle: 'React portfolio Website',
         linkGit: 'https://github.com/polettoweb/reactportfolio',
         linkGitTitle: 'React portfolio Github repository',
@@ -31,7 +31,7 @@ const workshopItems = [
         text: 'Previous version of the portfolio using Nuxt.JS as framework.',
         image: nuxtCover,
         tags: 'Nuxt.JS, Vue.JS, Vuex, Sass',
-        link: 'https://nuxt.marcopoletto.co.uk',
+        link: 'https://nuxt.marcopoletto.eu',
         linkTitle: 'Marco Poletto Nuxt.JS',
         linkGit: 'https://github.com/polettoweb/nuxtportfolio',
         linkGitTitle: 'Nuxt portfolio Github repository',
@@ -40,7 +40,7 @@ const workshopItems = [
         text: 'First version of the portfolio using Vue.JS as framework.',
         image: vueImg,
         tags: 'Vue.JS, Vuex, Sass',
-        link: 'https://vue.marcopoletto.co.uk',
+        link: 'https://vue.marcopoletto.eu',
         linkTitle: 'Marco Poletto Vue.JS',
         linkGit: 'https://github.com/polettoweb/vueportfolio',
         linkGitTitle: 'Vue portfolio Github repository',
@@ -71,9 +71,18 @@ class Workshop extends Component {
                 <div className="workshop">
                     <Helmet>
                         <meta charSet="UTF-8" />
-                        <meta name="description" content="Marco Poletto Frontend Web Developer, Web Designer freelance, workshop, side projects"/>
-                        <meta name="author" content="Marco Poletto Web Developer"/>
-                        <title>Marco Poletto | Web Developer - Workshop/Side Projects </title>
+                        <meta
+                            name="description"
+                            content="Marco Poletto Frontend Web Developer, Web Designer freelance, workshop, side projects"
+                        />
+                        <meta
+                            name="author"
+                            content="Marco Poletto Web Developer"
+                        />
+                        <title>
+                            Marco Poletto | Web Developer - Workshop/Side
+                            Projects{' '}
+                        </title>
                     </Helmet>
                     <h1>Workshop</h1>
                     <div className="workshop__container">

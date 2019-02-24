@@ -7,7 +7,7 @@ import Skill from '../components/partials/Skill'
 const expDetails = [
     {
         text:
-            'I am part of a big project for migrating a massive website built into Razor MVC into a new era. As part of the team I am maintening the company\'s websites (Manchester Airport, London Stanted Airport and East Midlands Airport), migrating them using CI/CD into VueJS components and NuxtJS, improving performance and updating/refactoring the existent codebase. Furthermore, I am managing and mentoring junior developers with a pair programme system.',
+            "I am part of a big project for migrating a massive website built into Razor MVC into a new era. As part of the team I am maintening the company's websites (Manchester Airport, London Stanted Airport and East Midlands Airport), migrating them using CI/CD into VueJS components and NuxtJS, improving performance and updating/refactoring the existent codebase. Furthermore, I am managing and mentoring junior developers with a pair programme system.",
         number: 'odd',
         title: 'UI Engineer',
         location: 'Manchester Airports Group - Manchester',
@@ -15,7 +15,7 @@ const expDetails = [
     },
     {
         text:
-            'I was part of a big team maintening the two company\'s websites (Missguided and Mennace) built with Magento, reshaping them with a more up-to-date look and feel, improving their performance, introducing Webpack bundler and React components',
+            "I was part of a big team maintening the two company's websites (Missguided and Mennace) built with Magento, reshaping them with a more up-to-date look and feel, improving their performance, introducing Webpack bundler and React components",
         number: 'even',
         title: 'Frontend Software Engineer',
         location: 'Missguided LTD - Manchester',
@@ -51,91 +51,70 @@ const skillsLines = {
     professional: [
         {
             title: 'Frontend Development',
-            value: '100',
         },
         {
             title: 'Email Development',
-            value: '100',
         },
         {
             title: 'Reactive Development',
-            value: '95',
         },
         {
             title: 'Prototyping',
-            value: '85',
         },
         {
             title: 'UX/UI Design',
-            value: '90',
         },
         {
             title: 'Backend Development',
-            value: '60',
         },
         {
             title: 'Use cases',
-            value: '90',
         },
     ],
     detailed: [
         {
             title: 'Test-driven Development',
-            value: '85',
         },
         {
             title: 'HTML / CSS',
-            value: '100',
         },
         {
             title: 'Reactive Frameworks (VueJS, React)',
-            value: '95',
         },
         {
             title: 'Prototyping Tools (Proto.io, Invision)',
-            value: '85',
         },
         {
             title: 'Adobe Creative Suite',
-            value: '80',
         },
         {
             title: 'PHP and MySQL',
-            value: '60',
         },
         {
             title: 'Magento',
-            value: '70',
         },
     ],
     personal: [
         {
             title: 'Commitment ',
-            value: '100',
         },
         {
             title: 'Punctuality ',
-            value: '100',
         },
         {
             title: 'Leadership',
-            value: '100',
         },
         {
             title: 'Communication Skill',
-            value: '100',
         },
         {
             title: 'Analytical Skill',
-            value: '100',
         },
         {
             title: 'Teamwork',
-            value: '100',
         },
         {
             title: 'Self-Motivation ',
-            value: '100',
         },
     ],
 }
@@ -149,9 +128,18 @@ class Resume extends Component {
                 <section className="resume__container">
                     <Helmet>
                         <meta charSet="UTF-8" />
-                        <meta name="description" content="Marco Poletto Frontend Web Developer, Web Designer freelance, curriculum vitae. Hire me"/>
-                        <meta name="author" content="Marco Poletto Web Developer"/>
-                        <title>Marco Poletto | Web Developer - Curriculum Vitae - Hire me </title>
+                        <meta
+                            name="description"
+                            content="Marco Poletto Frontend Web Developer, Web Designer freelance, curriculum vitae. Hire me"
+                        />
+                        <meta
+                            name="author"
+                            content="Marco Poletto Web Developer"
+                        />
+                        <title>
+                            Marco Poletto | Web Developer - Curriculum Vitae -
+                            Hire me{' '}
+                        </title>
                     </Helmet>
                     <section className="experience__container">
                         <h1>Experience</h1>
@@ -170,16 +158,14 @@ class Resume extends Component {
                     </section>
                     <section className="skills__container">
                         <h2>Skills</h2>
-                        {skillsTopics.map((topic, i) => {
+                        {skillsTopics.map(topic => {
                             return (
                                 <Skill title={topic}>
                                     <div className="skill__title">
                                         {skillsLines[topic].map(item => {
                                             return (
                                                 <React.Fragment>
-                                                    <p>
-                                                        {item.title}
-                                                    </p>
+                                                    <p>{item.title}</p>
                                                 </React.Fragment>
                                             )
                                         })}
@@ -199,7 +185,7 @@ class Resume extends Component {
                         </a>
                         <a
                             className="button"
-                            href="mailto:marco@marcopoletto.co.uk"
+                            href="mailto:marco@marcopoletto.eu"
                         >
                             Contact Me
                         </a>
