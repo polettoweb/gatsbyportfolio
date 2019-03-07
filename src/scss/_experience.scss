@@ -14,6 +14,12 @@
             left: 96%;
         }
     }
+    
+    &__intro {
+        font-family: $family-secondary;
+        color: white;
+    }
+
     &__container {
         @include centerItem($max-width);
         @include flexBasic(center, column, nowrap);
@@ -23,6 +29,7 @@
         h3 {
             padding: 0;
         }
+
         ul {
             width: 100%;
             margin: 32px auto;
