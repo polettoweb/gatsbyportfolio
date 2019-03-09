@@ -97,7 +97,8 @@ class Portfolio extends Component {
                             content="Marco Poletto Frontend Web Developer, Web Designer freelance, portfolio"
                         />
                         <title>
-                            Marco Poletto | Web Developer - Portfolio{' '}
+                            Marco Poletto's Portfolio | Frontend Web Developer |
+                            UI Engineer | Mentor
                         </title>
                     </Helmet>
                     <h1>Portfolio</h1>
@@ -111,7 +112,6 @@ class Portfolio extends Component {
                                         tags={item.tags}
                                         linkTitle={item.linkTitle}
                                     >
-                                        {/* <img src={aquapura} /> */}
                                         <img
                                             src={item.src}
                                             key={index}
