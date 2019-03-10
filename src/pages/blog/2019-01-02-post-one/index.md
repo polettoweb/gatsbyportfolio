@@ -9,7 +9,8 @@ featured: './vuevsreact.jpg'
 testo di prova
 ![alt text](./vuevsreact.jpg "Logo Title Text 1")
 
-```js
+
+```javascript
 export const postQuery = graphql`
     query BlogPostByPath($path: String!) {
         markdownRemark(frontmatter: { path: { eq: $path } }) {

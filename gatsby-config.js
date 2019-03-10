@@ -46,6 +46,13 @@ module.exports = {
               noInlineHighlight: false,
             },
           },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1280,
+              withWebp: true
+            },
+          }
         ],
       },
     },
