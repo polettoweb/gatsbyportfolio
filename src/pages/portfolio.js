@@ -105,7 +105,7 @@ class Portfolio extends Component {
                     <div className="portfolio__container">
                         {PortfolioItems.map((item, index) => {
                             return (
-                                <div className="portfolio__img">
+                                <div className="portfolio__img" key={index}>
                                     <Link
                                         to={'/portfolio/' + item.path}
                                         alt={item.alt}
@@ -114,7 +114,6 @@ class Portfolio extends Component {
                                     >
                                         <img
                                             src={item.src}
-                                            key={index}
                                             alt={item.alt}
                                         />
                                     </Link>
