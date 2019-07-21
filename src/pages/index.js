@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Keywords from '../components/partials/Keywords'
-import me from '../images/marco.png'
+import me from '../images/marco-nobg.png'
 
 class Home extends Component {
     render() {

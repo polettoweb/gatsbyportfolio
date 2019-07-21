@@ -5,4 +5,4 @@
  */
 
 import './src/scss/App.scss'
-import 'prismjs/themes/prism-xonokai.css'
+import './src/scss/prism-xonokai.css'

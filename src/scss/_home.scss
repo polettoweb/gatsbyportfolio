@@ -35,13 +35,11 @@
             position: absolute;
             top: 20%;
             left: 5%;
-            transform: rotateY(40deg);
             background: rgba(255, 255, 255, 0.1);
 
             @media (max-width: 959px) {
                 width: 100%;
                 position: relative;
-                transform: none;
                 top:0;
                 left: 0;
             }
@@ -62,6 +60,7 @@
                 }
             }
         }
+        
         h1 {
             width: 90%;
             max-width: 580px;
