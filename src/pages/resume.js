@@ -171,11 +171,11 @@ class Resume extends Component {
                         <h2>Skills</h2>
                         {skillsTopics.map(topic => {
                             return (
-                                <Skill title={topic}>
+                                <Skill key={topic} title={topic}>
                                     <div className="skill__title">
                                         {skillsLines[topic].map(item => {
                                             return (
-                                                <React.Fragment>
+                                                <React.Fragment key={item.title}>
                                                     <p>{item.title}</p>
                                                 </React.Fragment>
                                             )

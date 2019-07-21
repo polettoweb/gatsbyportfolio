@@ -8,18 +8,14 @@
         top: 70%;
         text-align: right;
 
-        @media (max-width: 959px) {
-            position: relative;
-            width: 90%;
-            left: 5%;
+        @media (max-width: 1024px) {
+            position: static;
+            margin: 0 auto;
+            width: 100%;
         }
 
-        @media (max-width: 450px) {
+        @media (max-width: 550px) {
             transform: scale(0.7);
-        }
-
-        @media (max-height: 900px) {
-            top: 60%;
         }
 
         .keywords__wrapper {

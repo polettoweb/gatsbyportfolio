@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Spring } from 'react-spring';
 
 const keywords = [
@@ -33,9 +33,7 @@ const keywords = [
 ];
 
 
-class Keywords extends Component {
-    render() {
-        return (
+const Keywords  = () => (
             <div className="keywords__container">
                 <div className="keywords__wrapper">
                     {keywords.map((item, i) => {
@@ -48,7 +46,5 @@ class Keywords extends Component {
                 </div>
             </div>
         );
-    }
-}
 
 export default Keywords;

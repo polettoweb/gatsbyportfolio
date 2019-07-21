@@ -14,7 +14,7 @@ const workshopItems = [
         image: gatsbyImg,
         tags: 'GatsbyJS, React.JS, GraphQL, Reach-router, Sass',
         link: '/',
-        linkTitle: 'React portfolio Website',
+        linktitle: 'React portfolio Website',
         linkGit: 'https://github.com/polettoweb/gatsbyportfolio',
         linkGitTitle: 'React portfolio Github repository',
     },
@@ -23,7 +23,7 @@ const workshopItems = [
         image: reactImg,
         tags: 'React.JS, React-router, Sass',
         link: 'https://react.marcopoletto.eu',
-        linkTitle: 'React portfolio Website',
+        linktitle: 'React portfolio Website',
         linkGit: 'https://github.com/polettoweb/reactportfolio',
         linkGitTitle: 'React portfolio Github repository',
     },
@@ -32,7 +32,7 @@ const workshopItems = [
         image: nuxtCover,
         tags: 'Nuxt.JS, Vue.JS, Vuex, Sass',
         link: 'https://nuxt.marcopoletto.eu',
-        linkTitle: 'Marco Poletto Nuxt.JS',
+        linktitle: 'Marco Poletto Nuxt.JS',
         linkGit: 'https://github.com/polettoweb/nuxtportfolio',
         linkGitTitle: 'Nuxt portfolio Github repository',
     },
@@ -41,7 +41,7 @@ const workshopItems = [
         image: vueImg,
         tags: 'Vue.JS, Vuex, Sass',
         link: 'https://vue.marcopoletto.eu',
-        linkTitle: 'Marco Poletto Vue.JS',
+        linktitle: 'Marco Poletto Vue.JS',
         linkGit: 'https://github.com/polettoweb/vueportfolio',
         linkGitTitle: 'Vue portfolio Github repository',
     },
@@ -50,7 +50,7 @@ const workshopItems = [
         image: vueImg,
         tags: 'Vue.JS, vue-resource, Imageur API',
         link: 'https://small-ecommerce-example-vuejs-ldaubcucrv.now.sh/',
-        linkTitle: 'Small ecommerce example in Vue.JS',
+        linktitle: 'Small ecommerce example in Vue.JS',
         linkGit: 'https://github.com/polettoweb/vue-small-ecommerce',
         linkGitTitle: 'Vue eCommerce Github repository',
     },
@@ -59,7 +59,7 @@ const workshopItems = [
         image: vueImg,
         tags: 'Vue.JS',
         link: 'https://github.com/polettoweb/todo-vue',
-        linkTitle: 'Todo list Built with Vue.JS',
+        linktitle: 'Todo list Built with Vue.JS',
         linkGit: 'https://github.com/polettoweb/todo-vue',
         linkGitTitle: 'Todo list Built with Vue.JS',
     },
@@ -93,7 +93,7 @@ class Workshop extends Component {
                                     image={item.image}
                                     tags={item.tags}
                                     link={item.link}
-                                    linkTitle={item.linkTitle}
+                                    linktitle={item.linktitle}
                                     linkGit={item.linkGit}
                                     linkGitTitle={item.linkGitTitle}
                                 />

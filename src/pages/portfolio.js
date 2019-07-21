@@ -19,7 +19,7 @@ const PortfolioItems = [
         tags:
             'Magento, Frontend Development, HTML5, Sass, Javascript, JSON, AJAX, RESTful API, A/B testing',
         link: 'https://missguided.co.uk',
-        linkTitle: 'Missguided',
+        linktitle: 'Missguided',
     },
     {
         path: 'mag',
@@ -29,7 +29,7 @@ const PortfolioItems = [
         tags:
             'Graphic Design, Full Stack Development, Magento, Sass, Javascript, JSON, AJAX, RESTful API',
         link: 'http://www.brandymelville.co.uk',
-        linkTitle: 'Brandy Melville UK',
+        linktitle: 'Manchester Airport Group',
     },
     {
         path: 'mennace',
@@ -38,7 +38,7 @@ const PortfolioItems = [
         tags:
             'Magento, Frontend Development, HTML5, Sass, Javascript, JSON, AJAX, RESTful API, A/B testing',
         link: 'https://mennace.com/uk',
-        linkTitle: 'Mennace',
+        linktitle: 'Mennace',
     },
     {
         path: 'stoves',
@@ -47,7 +47,7 @@ const PortfolioItems = [
         tags:
             'Frontend Development, HTML5, Sass, Javascript, jQuery, JSON, AJAX, GoogleMaps API',
         link: 'http://www.stoves.co.uk',
-        linkTitle: 'Stoves UK',
+        linktitle: 'Stoves UK',
     },
     {
         path: 'lanterntankard',
@@ -55,7 +55,7 @@ const PortfolioItems = [
         src: tankard,
         tags: 'Frontend Development, HTML5, Sass, CSS animations, Javascript',
         link: 'http://www.thelanterntankard.com',
-        linkTitle: 'The Lantern Tankard',
+        linktitle: 'The Lantern Tankard',
     },
     {
         path: 'belling',
@@ -64,7 +64,7 @@ const PortfolioItems = [
         tags:
             'Frontend Development, HTML5, Sass, Javascript, jQuery, JSON, AJAX',
         link: 'http://www.belling.co.uk',
-        linkTitle: 'Belling UK',
+        linktitle: 'Belling UK',
     },
     {
         path: 'aquapura',
@@ -73,7 +73,7 @@ const PortfolioItems = [
         tags:
             'Wordpress, Frontend Development, HTML5, Sass, Javascript, jQuery, JSON, AJAX, WebGL, RESTful API',
         link: 'https://aqua-pura.com',
-        linkTitle: 'Aqua Pura UK',
+        linktitle: 'Aqua Pura UK',
     },
     {
         path: 'bbvenezia',
@@ -83,7 +83,7 @@ const PortfolioItems = [
         tags:
             'Graphic Design, Full Stack Development, PHP, Sass, CSS3, Javascript, RESTful API',
         link: 'http://www.bbvenezia.com',
-        linkTitle: 'B&amp;B Venezia',
+        linktitle: 'B&amp;B Venezia',
     },
 ]
 class Portfolio extends Component {
@@ -110,7 +110,7 @@ class Portfolio extends Component {
                                         to={'/portfolio/' + item.path}
                                         alt={item.alt}
                                         tags={item.tags}
-                                        linkTitle={item.linkTitle}
+                                        linktitle={item.linktitle}
                                     >
                                         <img
                                             src={item.src}

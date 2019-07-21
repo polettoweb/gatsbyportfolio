@@ -7,7 +7,7 @@ class WorkshopItem extends Component {
         this.image = this.props.image
         this.text = this.props.text
         this.link = this.props.link
-        this.linkTitle = this.props.linkTitle
+        this.linktitle = this.props.linktitle
         this.linkGit = this.props.linkGit
         this.tags = this.props.tags
         this.linkGitTitle = this.props.linkGitTitle
@@ -19,14 +19,14 @@ class WorkshopItem extends Component {
                 <div className="workshop__img">
                     <a
                         href={this.link}
-                        title={this.linkTitle}
+                        title={this.linktitle}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <img
                             className="workshop__techImg"
                             src={this.image}
-                            alt={this.linkTitle}
+                            alt={this.linktitle}
                         />
                     </a>
                 </div>
